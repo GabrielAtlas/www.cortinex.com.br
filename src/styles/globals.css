@@ -1,6 +1,6 @@
 :root {
   --white: #fff;
-  --cortinex-orange: rgba(255, 102, 44, 100);
+  --cortinex-orange: rgba(251, 109, 55, 100);
   --header-text: #606060;
   --footer-text: #d3d3d4;
   --green: #4cd62b;
@@ -34,11 +34,22 @@ a {
   box-sizing: border-box;
 }
 
-.full-circle {
+.left-circle {
   position: absolute;
   background: var(--cortinex-orange);
   clip-path: circle(50%);
   height: 40em;
   width: 40em;
   left: -25%;
+  z-index: 0;
+}
+
+.right-circle {
+  position: absolute;
+  background: var(--cortinex-orange);
+  clip-path: circle(50%);
+  height: 40em;
+  width: 40em;
+  right: -15%;
+  z-index: 0;
 }

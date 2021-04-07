@@ -12,7 +12,8 @@ export default function Home() {
       </Head>
       <Header />
       <CortinexCarousel />
-      <div className="full-circle" />
+      <div className="left-circle" />
+      <div className="right-circle" />
     </>
   );
 }

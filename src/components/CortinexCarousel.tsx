@@ -8,19 +8,28 @@ import CarouselItem from "./CarouselItem";
 
 export default function CortinexCarousel() {
   return (
-    <div className={styles.main__carousel}>
-      <Carousel showArrows showThumbs={false} showStatus={false} autoPlay>
-        <CarouselItem
-          title="Faça hoje mesmo seu orçamento conosco"
-          subtitle="Faça seu orçamento e planeje a sua cortina do seu jeito!"
-          source="cortina-template.jpeg"
-        />
-        <CarouselItem
-          title="Faça hoje mesmo seu orçamento conosco"
-          subtitle="Faça seu orçamento e planeje a sua cortina do seu jeito!"
-          source="cortina-template.jpeg"
-        />
-      </Carousel>
+    <div className={styles.wrapper}>
+      <div className={styles.main__carousel}>
+        <Carousel
+          showArrows
+          showThumbs={false}
+          showStatus={false}
+          showIndicators={false}
+          autoPlay
+          swipeable
+        >
+          <CarouselItem
+            title="Faça hoje mesmo seu orçamento conosco"
+            subtitle="Faça seu orçamento e planeje a sua cortina do seu jeito!"
+            source="cortina-template.jpeg"
+          />
+          <CarouselItem
+            title="Faça hoje mesmo seu orçamento conosco"
+            subtitle="Faça seu orçamento e planeje a sua cortina do seu jeito!"
+            source="cortina-template.jpeg"
+          />
+        </Carousel>
+      </div>
     </div>
   );
 }
