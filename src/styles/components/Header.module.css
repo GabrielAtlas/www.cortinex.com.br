@@ -1,0 +1,38 @@
+.encomendar {
+  padding: 15px 40px;
+  background-color: var(--cortinex-orange);
+  font-weight: 600;
+  margin-right: 0;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  color: var(--white);
+  transition: all 0.3s ease 0s;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.logo {
+  width: 180px;
+  cursor: pointer;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links > li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav__links > li > a {
+  color: var(--header-text);
+  padding: 0 50px;
+  font-weight: bold;
+}
